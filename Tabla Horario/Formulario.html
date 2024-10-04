@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="Destinatario.html">
+        <fieldset style="background-color: #977499;">
+            <legend style="background-color: white; padding: 5px 10px; border: 1px solid black;">Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" />
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" />
+            <label for="DNI">DNI</label>
+            <input type="text" name="DNI" /><br/>
+            <label for="nacimiento">Lugar de nacimiento: </label>
+            <input type="text" name="nacimiento" />
+            <label for="provincia">Provincia: </label>
+            <select name="provincia">
+                <option value="C">Cáceres</option>
+                <option value="B">Badajoz</option>
+            </select>
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" name="fecha" /><br/>
+            <label for="direccion">Direccion</label>
+            <input type="text" name="direccion" />
+            <label for="codigo">Codigo Postal: </label>
+            <input type="text" name="codigo" />
+        </fieldset>
+        <fieldset style="background-color: #6d87a9;">
+            <legend style="background-color: white; padding: 5px 10px; border: 1px solid black;">Forma de Acceso</legend>
+            <p>
+                <input type="radio" name="a" />
+                <label for="directo">Directo</label>
+                <p style="margin-left: 20px;">
+                    <input type="radio" name="b" />
+                    <label for="bachillerato">Bachillerato</label>
+                    <input type="text" name="bachillerato" /><br/>
+                    <input type="radio" name="b" />
+                    <label for="uni">Universidad</label><br/>
+                    <input type="radio" name="b" />
+                    <label for="grado">Grado medio</label>
+                    <input type="text" name="grado" /><br/>
+                    <input type="radio" name="b" />
+                    <label for="otros">Otros(especifique)</label>
+                    <input type="text" name="otros" /><br/>
+                </p>
+                <input type="radio" name="a" />
+                <label for="prueba">Prueba Libre</label>
+            </p>
+            
+        </fieldset>
+        
+        <fieldset style="background-color: #558856;">
+            <legend style="background-color: white; padding: 5px 10px; border: 1px solid black;">Documentos adjuntados</legend>
+            <input type="checkbox" name="dni"/>
+            <label for="dni">Fotocopia DNI</label>
+            <input type="checkbox" name="certi"/>
+            <label for="certi">Certificado academico</label><br/>
+            <input type="checkbox" name="doc"/>
+            <label for="doc">Otros Documentos(especifique)</label>
+            <input type="text" name="doc" /><br/>
+        </fieldset>
+    </form>
+</body>
+</html>
