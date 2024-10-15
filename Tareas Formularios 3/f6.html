@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 6</title>
+</head>
+<body>
+    <form action="procesar.php" method="POST">
+        <h2>Mensaje al profesor</h2>
+        <input type="hidden" name="origen" value="Academia">
+      
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+      
+        <label for="turno">Turno:</label>
+        <select id="turno" name="turno">
+          <option value="manana">Manana</option>
+          <option value="tarde">Tarde</option>
+        </select><br>
+      
+        <label for="materias">Materias:</label>
+        <select id="materias" name="materias">
+          <option value="fisica">Fisica</option>
+          <option value="quimica">Quimica</option>
+          <option value="biologia">Biologia</option>
+          <option value="matematicas">Matematicas</option>
+        </select><br>
+      
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" cols="30" rows="4"></textarea><br><br>
+      
+        <input type="submit" value="Enviar" style="text-align: center;">
+      </form>
+      
+</body>
+</html>

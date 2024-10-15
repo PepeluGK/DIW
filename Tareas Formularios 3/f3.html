@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva - Club de Deportes</title>
+</head>
+<body>
+    <h1>Formulario de Reserva de Pista</h1>
+
+<form action="procesar_reserva.php" method="post">
+    
+    <fieldset>
+        <legend>Datos Personales</legend>
+        
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" pattern="[A-Z][a-z]*" title="Debe comenzar con mayúscula seguida de minúsculas y sin caracteres especiales." required><br><br>
+
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" pattern="[A-Z][a-z]*" title="Debe comenzar con mayúscula seguida de minúsculas y sin caracteres especiales." required><br><br>
+
+        <label for="miembro">¿Es miembro del club?</label><br>
+        <select id="miembro" name="miembro">
+            <option value="si" selected>Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Datos de la Reserva</legend>
+
+        <label for="deporte">Deporte:</label><br>
+        <select id="deporte" name="deporte" required>
+            <option value="paddle">Paddle</option>
+            <option value="squash">Squash</option>
+            <option value="tenis">Tenis</option>
+        </select><br><br>
+
+        <label for="fecha_hora">Fecha y Hora de la Reserva:</label><br>
+        <input type="datetime-local" id="fecha_hora" name="fecha_hora" required><br><br>
+
+        <input type="checkbox" id="acepta_normas" name="acepta_normas" required>
+        <label for="acepta_normas">Acepto las normas del club</label><br><br>
+    </fieldset>
+
+
+    <div style="text-align: center;">
+        <button type="submit">Reservar Plaza</button>
+    </div>
+</form>
+</body>
+</html>
