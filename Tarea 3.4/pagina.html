@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <style>
+
+        th::first-letter {
+            font-size: 2em;
+        }
+        
+        td:first-child {
+            background-color: green;
+        }
+
+        td[colspan="5"] {
+            background-color: yellow;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:not(:visited) {
+            color: green;
+        }
+
+        td:nth-child(6):hover {
+            font-size: 2em;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1" width="50%" cellspacing="0" cellpadding="5">
+        <caption style="color: green;" ><a href="https://openwebinars.net/"><b>HORARIO DE CLASE CURSO 2018-2019</b></a></caption>
+        <thead>
+            <tr>
+                <th>HORAS</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00</td>
+                <td rowspan="2">Matemáticas</td>
+                <td>Lengua</td>
+                <td>Inglés</td>
+                <td colspan="2">Ciencias</td>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Historia</td>
+                <td>Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td colspan="5" align="center"><b>RECREO</b></td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Inglés</td>
+                <td rowspan="2">Ciencias</td>
+                <td>Matemáticas</td>
+                <td>Lengua</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td>11:30</td>
+                <td>Historia</td>
+                <td>Matemáticas</td>
+                <td>Matemáticas</td>
+                <td>Inglés</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <form style="text-align: center;">
+        <label for="email">Email*:</label>
+        <input type="email" id="email" placeholder="Inserte email del destinatario" style="border: 1px solid red;">
+        <br><br>
+        <input type="submit" value="Enviar Horario">
+    </form>
+</body>
+</html>
