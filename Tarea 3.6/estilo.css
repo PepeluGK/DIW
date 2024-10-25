@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    max-width: 60em;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.principal {
+    display: flex;
+    gap: 1em;
+}
+
+.izquierda {
+    width: 16em;
+}
+
+
+.contenido-libro {
+    column-count: 3;
+    column-gap: 1em;
+}
