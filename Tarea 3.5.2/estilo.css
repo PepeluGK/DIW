@@ -1,0 +1,16 @@
+.titulo-principal {
+    border-bottom: 2px solid #00F;
+}
+
+.subtitulo {
+    border: 2px solid #AAA;
+}
+
+.lista-datos-libro {
+    border-top: 4px dotted #F00;
+    border-bottom: 4px dotted #F00;
+}
+
+.lista-contenido-libro {
+    border: 2px dashed #0F0;
+}
