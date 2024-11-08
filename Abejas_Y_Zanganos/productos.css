@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #D8CEB6;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product-card {
+    background-color: #f5e79c;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.product-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product-card button {
+    background-color: #00ff00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D8CEB6;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+.support,  .social-media {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.insta{
+    height: 29px;
+    width: 49px;
+}
+
+.tiktok{
+    height: 32px;
+    width: 32px;
+}
+
+.twitter{
+    margin-bottom: -4%;
+    height: 43px;
+    width: 43px;
+}

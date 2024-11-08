@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D8CEB6;
+    width: 100vw;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about, .products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.products{
+    flex-direction: row-reverse;
+}
+
+.image {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #f5e79c;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D8CEB6;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+.support,  .social-media {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.insta{
+    height: 29px;
+    width: 49px;
+}
+
+.tiktok{
+    height: 32px;
+    width: 32px;
+}
+
+.twitter{
+    margin-bottom: -4%;
+    height: 43px;
+    width: 43px;
+}
